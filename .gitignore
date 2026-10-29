@@ -1,0 +1,19 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Dataset descargado (se descarga automáticamente con torchvision)
+data/
+
+# Pesos del modelo (se regeneran con train.py)
+*.pth
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Editor y sistema
+.vscode/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,152 @@
+{
+  "seed": 57,
+  "device": "cpu",
+  "hyperparameters": {
+    "epochs": 20,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "dropout": 0.5,
+    "val_size": 0.2,
+    "num_workers": 0
+  },
+  "trainable_parameters": 545098,
+  "best_epoch": 19,
+  "best_val_acc": 72.89,
+  "test_loss": 0.7799,
+  "test_acc": 73.09,
+  "diagnosis": {
+    "gap_acc_last_epoch": -5.76,
+    "gap_acc_best_epoch": -6.29,
+    "min_val_loss": 0.7811,
+    "min_val_loss_epoch": 19,
+    "val_loss_rise_from_min": 0.0145,
+    "notes": [
+      "Síntomas de UNDERFITTING: el accuracy de entrenamiento sigue por debajo de 70 %; el modelo aún no se ajusta bien ni a los datos que ve.",
+      "Validación > entrenamiento: es esperable con Data Augmentation y Dropout, porque el accuracy de entrenamiento se mide sobre imágenes alteradas y con neuronas apagadas, mientras la validación usa imágenes limpias y modo eval."
+    ]
+  },
+  "confusion_matrix": [
+    [
+      774,
+      27,
+      43,
+      15,
+      6,
+      4,
+      8,
+      11,
+      66,
+      46
+    ],
+    [
+      17,
+      903,
+      0,
+      3,
+      1,
+      1,
+      5,
+      0,
+      12,
+      58
+    ],
+    [
+      88,
+      6,
+      548,
+      55,
+      110,
+      67,
+      78,
+      26,
+      13,
+      9
+    ],
+    [
+      29,
+      10,
+      55,
+      546,
+      48,
+      166,
+      82,
+      25,
+      23,
+      16
+    ],
+    [
+      25,
+      3,
+      58,
+      61,
+      671,
+      33,
+      58,
+      76,
+      13,
+      2
+    ],
+    [
+      12,
+      1,
+      35,
+      181,
+      49,
+      640,
+      16,
+      36,
+      20,
+      10
+    ],
+    [
+      8,
+      8,
+      33,
+      71,
+      39,
+      13,
+      813,
+      3,
+      7,
+      5
+    ],
+    [
+      18,
+      2,
+      26,
+      47,
+      42,
+      66,
+      10,
+      770,
+      3,
+      16
+    ],
+    [
+      58,
+      40,
+      11,
+      8,
+      5,
+      1,
+      4,
+      5,
+      838,
+      30
+    ],
+    [
+      20,
+      106,
+      3,
+      20,
+      2,
+      1,
+      8,
+      11,
+      23,
+      806
+    ]
+  ],
+  "training_minutes": 7.9
+}
